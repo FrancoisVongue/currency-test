@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 
+let connection = null;
 exports.InitDb = async (dbString) => {
+    if(connection)
+        return Promise.resolve(connection);
+
     try {
-        const connection = await mongoose.connect(dbString, {
+        connection = await mongoose.connect(dbString, {
             useNewUrlParser: true,
             useCreateIndex: true,
             useFindAndModify: false,
