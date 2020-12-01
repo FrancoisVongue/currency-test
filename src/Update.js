@@ -19,6 +19,7 @@ const update = async () => {
         console.log(`Successfully Updated: ${newCurrency.name}, current value: ${newCurrency.course}`);
     } catch (e) {
         console.log(`Could not update, because: ${e.message}`);
+        process.exit(0);
     }
 }
 

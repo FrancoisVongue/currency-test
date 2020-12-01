@@ -7,10 +7,10 @@ type Currency = {
 }
 ```
 # Task
-1. There must be a **console** command that will change value of some currency
-3. There must be a **JWT auth**.
 
 ## Done
+1. There must be a **console** command that will change value of some currency
+3. There must be a **JWT auth**.
 2. There must be an **ability to search** by currency name.
 4. You must use **MongoDB**
 
