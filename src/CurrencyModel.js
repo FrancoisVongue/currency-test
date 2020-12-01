@@ -21,3 +21,4 @@ const currencySchema = new mongoose.Schema({
         required: true,
     }
 })
+exports.Currency = mongoose.model('Currency', currencySchema);
